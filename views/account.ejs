@@ -1,0 +1,260 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <title>BuSe Coin</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script language="javascript" src="vendor/bootstrap.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap.css" />
+    <script language="javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+    <div class="main-menu">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://localhost:3000/">Trang chủ</a></li>
+                        <li><a href="http://localhost:3000/history">Lịch sử</a></li>
+                        <li><a href="#">Liên kết</a></li>
+                        <li><a href="#">Hướng dẫn</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <%
+                            if ( email === undefined ){
+                        %>
+                            <li>
+                                <a href="http://localhost:3000/login">Đăng nhập</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost:3000/register">Đăng ký</a>
+                            </li>
+                            <%
+                            }
+                            else{
+                        %>
+                                <li>
+                                    <a href="#">Lịch sử chuyển khoảng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lịch sử giao dịch</a>
+                                </li>
+                                <li class="dropdown" id="Login">
+                                    <a href="http://localhost:3000/account">
+                                        <%= nickname%>
+                                            <i class="fa fa-sort-desc"></i>
+                                    </a>
+                                    <div class="dropdown-content">
+                                        <a href="http://localhost:3000/account">Thông tin tài khoảng</a>
+                                        <a href="http://localhost:3000/logout" id="logout-btn">Thoát</a>
+                                    </div>
+                                </li>
+                                <%
+                            }
+                        %>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </div>
+    <!-- main-menu -->
+
+    <div class="main-body">
+        <div class="container-fluid">
+            <div class="information">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="dropdown">
+                        <button class="dropbtn" id="dropbtn">
+                                    Loại tiền:
+                                    <img src="Images/VND.png" alt="" class="img-responsive">
+                                    VND
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">
+                                <img src="Images/USD.png" alt="" class="img-responsive">
+                                    USD
+                            </a>
+                            <a href="#">
+                                <img src="Images/VND.png" alt="" class="img-responsive">
+                                    VND
+                            </a>
+                        </div>
+                        </li>
+                    </div>
+                    <!-- col -->
+                    <hr>
+
+                    <div class="price-box">
+                        <div class="title">Giá USD</div>
+                        <div class="price">22000 VND</div>
+                    </div>
+                    <!-- price-box -->
+
+                    <hr>
+
+                    <div class="buy-box">
+                        <div class="title">DANH SÁCH COIN</div>
+                        <ul class="buy-item">
+                            <li>
+                                <a href="#">
+                                    <span class="coin-mark">
+                                        <img src="Images/BTC.png" alt="" class="img-responsive">
+                                        BTC
+                                    </span>
+                                    <span class="coin-store">
+                                        3 BTC
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="coin-mark">
+                                        <img src="Images/BTC.png" alt="" class="img-responsive">
+                                        BTC
+                                    </span>
+                                    <span class="coin-store">
+                                        3 BTC
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="coin-mark">
+                                        <img src="Images/BTC.png" alt="" class="img-responsive">
+                                        BTC
+                                    </span>
+                                    <span class="coin-store">
+                                        3 BTC
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="coin-mark">
+                                        <img src="Images/BTC.png" alt="" class="img-responsive">
+                                        BTC
+                                    </span>
+                                    <span class="coin-store">
+                                        3 BTC
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="coin-mark">
+                                        <img src="Images/BTC.png" alt="" class="img-responsive">
+                                        BTC
+                                    </span>
+                                    <span class="coin-store">
+                                        3 BTC
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="coin-mark">
+                                        <img src="Images/BTC.png" alt="" class="img-responsive">
+                                        BTC
+                                    </span>
+                                    <span class="coin-store">
+                                        3 BTC
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="coin-mark">
+                                        <img src="Images/BTC.png" alt="" class="img-responsive">
+                                        BTC
+                                    </span>
+                                    <span class="coin-store">
+                                        3 BTC
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="coin-mark">
+                                        <img src="Images/BTC.png" alt="" class="img-responsive">
+                                        BTC
+                                    </span>
+                                    <span class="coin-store">
+                                        3 BTC
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="coin-mark">
+                                        <img src="Images/BTC.png" alt="" class="img-responsive">
+                                        BTC
+                                    </span>
+                                    <span class="coin-store">
+                                        3 BTC
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- buy-box -->
+                </div>
+                <!-- information -->
+
+                <div class="account">
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                        <div class="title">Thông tin tài khoảng</div>
+                        <hr>
+                        <div class="user-info">
+                            <div class="email">
+                                <div class="text">Email:</div>
+                                <input type="submit" id="email" value="<%= email%>">
+                            </div> <!-- email -->
+                            <hr>
+                            <div class="nickname">
+                                <div class="text">Nick name:</div>
+                                <input type="text" id="nickname" value="<%= nickname%>">
+                            </div> <!-- nickname -->
+                            <hr>
+                            <div class="tk">
+                                <div class="text">Tài khoảng thẻ:</div>
+                                <input type="text" id="tk" value="<%= TK%>">
+                            </div> <!-- tk -->
+                            <hr>
+                            <div class="wallet">
+                                <div class="text">Ví điện tử</div>
+                                <input type="text" id="wallet" value="<%= Wallet%>">
+                            </div> <!-- wallet -->
+                            <hr>
+                            <div class="edit">
+                                <button id="edit-btn">Sửa thông tin</button>
+                            </div> <!-- edit -->
+                            <div class="note" id="note7">* Vui lòng điền đủ thông tin</div>
+                            <div class="note" id="note8">* Thông tin đã được cập nhập! Vui lòng Đăng xuất để load lại dữ liệu</div>
+                            <div class="note" id="note9">* Dường như đã cí lỗi gì đó. Bạn vui lòng bấm F5 và nhập lại</div>
+                        </div> <!-- user-info -->
+                    </div>
+                    <!-- col -->
+                </div>
+                <!-- account -->
+            <!-- container -->
+        </div>
+        <!-- main-body -->
+</body>
+<script src="bundle.js"></script>
+</html>

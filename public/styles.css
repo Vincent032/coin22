@@ -1,0 +1,516 @@
+*{margin:0;padding:0; }
+
+.total {
+    position: relative;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.verify {
+    margin-bottom: 10px;
+}
+
+.login .info input#email {
+    width: 250px;
+    padding-left: 5px;
+}
+
+.info .text {
+    margin-right: 20px;
+    font-size: 25px;
+}
+.info {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login button {
+    background-color: #2574A9;
+    color: white;
+    padding: 5px;
+}
+
+.edit button {
+    background-color: #2574A9;
+    color: white;
+    padding: 5px;
+    transition: all .5s;
+}
+
+.edit button:hover {
+    transform: scale(1.2);
+}
+
+.edit a.edit-btn {
+    text-decoration: none;
+    background: #2574A9;
+    color: white;
+:
+}
+
+.account input {
+    width: 250px;
+}
+
+.user-info .email, .user-info .nickname,
+ .user-info .tk, .user-info .wallet {
+    display: flex;
+}
+
+.account h4 {
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 3px;
+}
+
+.account .text {
+    font-size: 20px;
+    width: 200px;
+}
+
+.amount {
+    position: relative;
+}
+
+.amount input[type="number"] {
+    right: 5px;
+    position: absolute;
+    bottom: 3px;
+}
+
+.total input, .price input,.in-store input {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    width: 100%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.guide {
+    margin-top: 10px;
+}
+
+.payout-table th {
+    text-align: center;
+}
+
+.payout-table td.amount {
+    min-width: 100px;
+}
+
+.payout-table td {
+    text-align: center;
+}
+
+.payout-table td.nickname {
+    min-width: 150px;
+}
+
+.payout-table td.price {min-width: 90px;}
+
+.payout-table td.time {
+    min-width: 50px;
+}
+
+.payout-table td.wallet {
+    overflow-x: auto;
+    max-width: 600px;
+}
+
+.panel {
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 0px;
+}
+
+.panel h3.value {
+    margin: 0px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.panel .text, .panel a {
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+.panel .buy-order-btn a {
+    text-decoration: none;
+    background-color: #2574A9;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    z-index: 5;
+}
+
+.panel .buy-order-btn a:hover {
+    transform: scale(1.1) !important;
+}
+
+.panel .in-store, .panel .price {
+    display: block;
+}
+
+.panel .in-store, .panel .price, .panel
+ .guide {
+    position: relative;
+}
+
+.total .total-value {
+    color: gray;
+    padding: 2px;
+    right: 20px;
+    position: absolute;
+}
+
+.user-wallet .total {
+    display: flex;
+}
+
+.coin-wallet tbody {
+    width: 98.5%;
+    max-height: 175px;
+    overflow: overlay;
+    position: absolute;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    margin-left: 5px;
+}
+
+.coin-wallet tr {}
+
+table.coin-wallet {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.coin-wallet th {
+    text-align: center;
+}
+
+.coin-wallet th.value {
+    width: 40%;
+}
+
+.coin-wallet th.amount {
+    width: 40%;
+}
+
+.coin-wallet th.sympol {
+    width: 20%;
+}
+
+.active{
+    background-color: #6BB9F0 !important;
+}
+
+.mobile-control{
+    display: none;
+}
+
+.mobile-control .title {
+    background-color: #2574A9;
+    color: white;
+    font-size: 30px;
+}
+
+a#buy-control, a#sell-control {
+    text-decoration: none;
+    text-align: center;
+}
+
+a#sell-control {
+    margin-left: 5px;
+}
+
+.mobile-control .col-xs-12.col-sm-12 {
+    display: flex;
+}
+
+.buy-item, .sell-item {
+    max-height: 390px;
+    overflow: overlay;
+}
+
+ul.history {max-height: 180px;overflow: overlay;}
+
+.trade-history .title {
+    background-color: #2574A9;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.sell {
+    color: red;
+}
+
+.buy {
+    color: green;
+}
+
+.history .col-md-2.col-lg-2 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.history li {
+    list-style: none;
+    font-size: 12px;
+    text-align: end;
+}
+
+ .user-wallet .wallet .title, .sell-order .title, .buy-order .title, .payout .title, .account .title, .login .title {
+    background-color: #2574A9;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 2px;
+}
+
+.wallet .title {
+    margin-left: 5px;
+}
+
+.user-wallet .wallet .row .total .title {
+    background-color: transparent;
+    color: gray;
+    font-size: 15px;
+}
+
+.buy-box ul.buy-item, .sell-box ul.sell-item {
+    border: 1px solid rgba(128, 128, 128, 0.24);
+}
+
+.buy-box .title, .sell-box .title {
+    background-color: #2574A9;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.buy-item li button span.coin-store {
+    line-height: 30px;
+    position: absolute;
+    right: 5%;
+    color: #C8F7C5;
+}
+
+.sell-item li a span.coin-store{
+    line-height: 30px;
+    position: absolute;
+    right: 5%;
+    color: #F1A9A0;
+}
+
+.buy-item li button span.coin-mark {
+    display: flex;
+    line-height: 30px;
+    color: #C8F7C5;
+}
+
+.sell-item li a span.coin-mark{
+    display: flex;
+    line-height: 30px;
+    color: #F1A9A0;
+}
+
+.buy-item li button span.coin-mark img, .sell-item li a span.coin-mark img {
+    width: 30px;
+    height: 30px;
+}
+
+.buy-item li button, .sell-item li button {
+    text-decoration: none;
+    display: flex;
+    transition: all .5s;
+    background-color: #2ECC71;
+    width: 100%;
+}
+
+.buy-item li:hover, .sell-item li:hover {background-color: transparent;}
+
+.buy-item li:hover button{
+    transform: scale(1.15);
+    background-color: #2ECC71;
+}
+
+.sell-item li:hover button {
+    transform: scale(1.15);
+    background-color: #F22613;
+}
+
+.buy-item li, .sell-item li {transition: all .5s;}
+
+.buy-item li{
+    list-style: none;
+    margin: 15px;
+    background-color: transparent;
+    padding: 5px;
+    position: relative;
+    font-size: 15px;
+}
+
+.sell-item li {
+    list-style: none;
+    margin: 15px;
+    background-color: #F22613;
+    padding: 5px;
+    position: relative;
+    font-size: 15px;
+}
+
+.price-box .price {position: absolute;right: 5%;background-color: #6BB9F0;width: 50%;text-align: center;}
+
+
+.price-box {
+    display: inline-flex;
+    background-color: #2574A9;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.information hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.panel hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.history hr {
+}
+
+
+.dropbtn img.img-responsive, .dropdown-content a img.img-responsive {
+    width: 15%;
+    height: 3%;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    background-color: #4ECDC4;
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    transition: all .5s;
+    font-size: 120%;
+}
+
+.main-menu a.dropbtn {
+    display: flex;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #4ECDC4;
+}
+
+.main-menu .navbar.navbar-default {
+    background-color: #2574A9;
+    border-radius: 0px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #2574A9;
+    display: flex;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+@media (max-width: 450px){
+    ul.history li .time{
+        display: none;
+    }
+
+    ul.history li .btc{
+        display: none;
+    }
+
+    .history li{
+        text-align: end;
+        font-size: 10px;
+    }
+
+    .buy-item{
+        max-height: 200px;
+    }
+    .sell-order{
+        display: none;
+    }
+
+    .mobile-control{
+        display: block;
+    }
+    .dropdown-content {
+        left: 0px;
+    }
+    ul.history{
+        max-height: 200px;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 210px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 5;
+    right: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

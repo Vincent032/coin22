@@ -1,0 +1,178 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <title>BuSe Coin</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script language="javascript" src="vendor/bootstrap.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap.css" />
+    <script language="javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+
+</head>
+
+<body>
+    <div class="test" id="root"></div>
+    <div class="main-menu">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://localhost:3000/">Trang chủ</a></li>
+                        <li><a href="http://localhost:3000/history">Lịch sử</a></li>
+                        <li><a href="#">Liên kết</a></li>
+                        <li><a href="#">Hướng dẫn</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <%
+                            if ( obj.email === undefined ){
+                        %>
+                            <li>
+                                <a href="http://localhost:3000/login">Đăng nhập</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost:3000/register">Đăng ký</a>
+                            </li>
+                            <%
+                            }
+                            else{
+                        %>
+                                <li>
+                                    <a href="#">Lịch sử chuyển khoảng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lịch sử giao dịch</a>
+                                </li>
+                                <li class="dropdown" id="Login">
+                                    <a href="http://localhost:3000/account">
+                                        <%= obj.nickname%>
+                                            <i class="fa fa-sort-desc"></i>
+                                    </a>
+                                    <div class="dropdown-content">
+                                        <a href="http://localhost:3000/account">Thông tin tài khoảng</a>
+                                        <a href="http://localhost:3000/logout" id="logout-btn">Thoát</a>
+                                    </div>
+                                </li>
+                                <%
+                            }
+                        %>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </div>
+    <!-- main-menu -->
+
+    <div class="main-body">
+        <div class="container-fluid">
+            <div class="information">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="dropdown">
+                        <button class="dropbtn" id="dropbtn">
+                                    Loại tiền:
+                                    <img src="Images/VND.png" alt="" class="img-responsive">
+                                    VND
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">
+                                <img src="Images/USD.png" alt="" class="img-responsive">
+                                    USD
+                            </a>
+                            <a href="#">
+                                <img src="Images/VND.png" alt="" class="img-responsive">
+                                    VND
+                            </a>
+                        </div>
+                        </li>
+                    </div>
+                    <!-- col -->
+                    <hr>
+
+                    <div class="price-box">
+                        <div class="title">Giá USD</div>
+                        <div class="price">22000 VND</div>
+                    </div>
+                    <!-- price-box -->
+
+                    <hr>
+
+                    <div class="buy-box">
+                        <div class="title">DANH SÁCH COIN</div>
+                        <div class="danhsach" id="danhsach">
+
+                        </div>
+                    </div>
+                    <!-- buy-box -->
+
+                    
+                </div>
+                <!--col-->
+            </div>
+            <!-- information -->
+            <div class="coin-info">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 trade-panel">
+                    <div class="mobile-control">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="col-xs-6 col-sm-6">
+                                    <a id="buy-control">
+                                        <div class="title active">MUA</div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <a id="sell-control">
+                                        <div class="title">BÁN</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- col -->
+                        </div>
+                        <!-- row -->
+                    </div>
+                    <!-- mobile-control -->
+                    <div class="row">
+                        <div class="buy-order" id="buy-order">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+                                <div class="title">MUA</div>
+                                <!-- title -->
+                                <div class="panel-place" id="buy-order-place"></div>
+                                
+                            </div>
+                            <!-- col -->
+                        </div>
+                        <!-- buy-order -->
+
+                        <div class="sell-order" id="sell-order">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+                                <div class="title">BÁN</div>
+                                <!-- title -->
+                                <div class="panel-place" id="sell-order-place"></div>
+                                
+                            </div>
+                            <!-- col -->
+                        </div>
+                        <!-- sell-order -->
+                    </div>
+
+                </div>
+                <!-- container -->
+            </div>
+            <!-- main-body -->
+</body>
+<script src="bundle.js"></script>
+
+</html>

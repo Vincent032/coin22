@@ -1,0 +1,110 @@
+*{margin:0;padding:0; }
+
+tr.tr0 {
+    background-color: darkgray;
+}
+
+tr.tr2 {
+    background-color: deepskyblue;
+}
+
+tr.tr1 {
+    background-color: white;
+}
+
+span.info {
+    display: grid;
+    color: white;
+    text-align: left;
+    padding: 5px;
+}
+
+.accept a, .cancel a {
+    position: relative;
+}
+
+.accept a:hover .inner, .cancel a:hover .inner {
+    display: block;
+}
+
+th.order {
+    width: 5%;
+}
+
+.main-body table {
+    width: 100%;
+}
+
+th.verify {width: 10%;}
+
+th.nickname {
+    width: 10%;
+}
+
+th.wallet {
+    width: 40%;
+}
+
+th.total {
+    width: 10%;
+}
+
+th.price {
+    width: 10%;
+}
+
+th.amount {
+    width: 10%;
+}
+
+th.time {
+    width: 5%;
+}
+
+.main-body th, .main-body td {
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+th.cancel {
+    width: 5%;
+}
+
+th.accept {
+    width: 5%;
+}
+
+.cancel-place{
+	background-color: #F64747;
+}
+
+.accept span.inner {
+    position: absolute;
+    top: 15px;
+    left: -70px;
+    padding: 8px;
+    display: none;
+    z-index: 5;
+}
+.accept-place{
+	background-color: rgb(0, 204, 0);
+}
+
+.cancel span.inner {
+    position: absolute;
+    top: 15px;
+    left: -95px;
+    padding: 8px;
+    display: none;
+    z-index: 5;
+}
+
+.accept i.fa, .cancel i.fa {padding-left: 10px;padding-right: 10px;font-size: 20px;}
+
+i.fa.fa-times {
+    color: red;
+}
+
+i.fa.fa-check {
+    color: green;
+}
